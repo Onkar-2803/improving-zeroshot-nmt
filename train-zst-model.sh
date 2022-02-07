@@ -6,7 +6,7 @@ set -e
 EXPDIR=$PWD
 SRC=$1					# it 		
 TGT=$2					# ro
-PRETRAINING=$3				# $EXPDIR/pretrain-baseline
+PRETRAINING=$3				# $EXPDIR/pretrain-model
 ROUNDS=$4				# maximum zst modeling rounds, each round includes an inference ed training with a single pass on data
 GPUS=$5					# gpu-id, -1 for cpu
 
