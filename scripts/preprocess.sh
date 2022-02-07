@@ -89,15 +89,16 @@ if [ ! -d $BPE_DATA ]; then
 fi
 
 
+mkdir $BIN_DATA
 
-# binarize train/valid/test
-if [ ! -d $BIN_DATA ]; then
-  mkdir $BIN_DATA
-  python $FAIRSEQ_PATH/preprocess.py -s src -t tgt \
-				--destdir $BIN_DATA \
-				--trainpref $BPE_DATA/train \
-				--validpref $BPE_DATA/dev \
-				--testpref $BPE_DATA/test \
-				--joined-dictionary \
-				--workers 32 
-fi
+# # binarize train/valid/test
+# if [ ! -d $BIN_DATA ]; then
+#   mkdir $BIN_DATA
+#   python $FAIRSEQ_PATH/preprocess.py -s src -t tgt \
+# 				--destdir $BIN_DATA \
+# 				--trainpref $BPE_DATA/train \
+# 				--validpref $BPE_DATA/dev \
+# 				--testpref $BPE_DATA/test \
+# 				--joined-dictionary \
+# 				--workers 32 
+# fi
