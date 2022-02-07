@@ -6,7 +6,7 @@ TGT=$2		# tgt
 GPUS=$3		# gpu id, -1 for cpu
 
 EXPDIR=$PWD/pretrain-model	# baseline model pre-training for zst-model 
-DATA=$EXPDIR/bin-data		
+DATA=$EXPDIR/data/bin-data		
 MODEL=$EXPDIR/model		
 mkdir -p $MODEL
 LOG=$EXPDIR/log.train
