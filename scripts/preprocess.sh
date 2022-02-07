@@ -13,8 +13,10 @@ BPESIZE=32000
 MOSES=$PWD/mosesdecoder/scripts
 NORM=$MOSES/tokenizer/normalize-punctuation.perl
 TOK=$MOSES/tokenizer/tokenizer.perl
-DEES=$MOSES//tokenizer/deescape-special-chars.perl
+DEES=$MOSES/tokenizer/deescape-special-chars.perl
 
+mkdir -p $PWD/pretrain-model
+mkdir -p $PWD/pretrain-model/data
 
 DATA=$PWD/data/ted-data 		
 EXPDIR=$PWD/pretrain-model
