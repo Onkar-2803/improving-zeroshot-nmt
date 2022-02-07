@@ -9,13 +9,13 @@ fi
 
 
 # fairseq
-if [ ! -d $EXPDIR/fairseq ]; then 
- git clone https://github.com/pytorch/fairseq
- pushd fairseq
- pip install --editable ./
- popd
-fi
-
+# if [ ! -d $EXPDIR/fairseq ]; then 
+#  git clone https://github.com/pytorch/fairseq
+#  pushd fairseq
+#  pip install --editable ./
+#  popd
+# fi
+pip install fairseq
 
 # subword-nmt 
 # git clone https://github.com/rsennrich/subword-nmt.git
